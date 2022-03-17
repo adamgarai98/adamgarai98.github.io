@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" media="(max-width: 1000px)" href="shopmobile.css">
+    <link rel="stylesheet" media="(min-width: 1001px)" href="shop.css">
+    <link rel="stylesheet" media="(max-width: 1000px)" href="checkoutMobile.css">
+    <link rel="stylesheet" media="(min-width: 1001px)" href="checkout.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 601px)" href="checkout.css"> -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="colours.css">
+    <script src="products.js"></script>
+    <script src="checkout.js"></script>
+    <title>Kevins Produce</title>
+</head>
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+<body>
+
+    <body>
+        <div id="wrapper">
+            <div class="navbar">
+                <div class="toggle-wrapper">
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                </div>
+
+                <div class="navbar-links">
+                    <ul>
+                        <li class="spacer">&nbsp;</li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a class="basket" href="checkout.html"><span>
+                Checkout</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="index.html">
+                <div class="hero">
+
+                    <fieldset>
+                        <legend>Delicious and Fresh</legend>
+                        <div class="title" href="index.html">Kevin's Produce</div>
+                    </fieldset>
+                </div>
+            </a>
+        </div>
+
+        <div id="checkout-body">
+            <div class="row">
+                <div class="column">
+                    <div id="customerDetails">
+                        <h2>Customer Details</h2>
+
+                        <form class="form" action="./" method="POST">
+                            <div class="form__item">
+                                <label for="givennames" class="form__label">Name</label>
+                                <input type="text" class="form__input" name="customerName" id="customerName" placeholder="Enter your given name(s)">
+                                <span class="form__error">A sample error message</span>
+                            </div>
+                            <div class="form__item">
+                                <label for="numusers" class="form__label">Email</label>
+                                <input type="number" class="form__input " name="emailAddress" id="emailAddress" placeholder="testuser@example.org">
+                                <span class="form__error">A sample error message</span>
+                            </div>
+                            <div class="form__item">
+                                <label for="expirydate" class="form__label">Contact number</label>
+                                <input type="number" class="form__input " name="contactNumber" id="contactNumber" placeholder="0734 8739267">
+                                <span class="form__error">A sample error message</span>
+                            </div>
+                            <div class="form__item">
+                                <label for="message" class="form__label">Delivery Address</label>
+                                <input type="text" class="form__input " name="delAddress" id="delAddress" placeholder="12 Example Avenue, Example Town, EX4 7AL">
+                                <span class="form__error">A sample error message</span>
+                            </div>
+                            <div class="form__item">
+                                <button><a class="form__btn" type="submit", id="paycreditcard", href="card.html">Pay By Credit Card</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <!-- <form action="#" method="post" class="checkout-basket" id="checkout-basket"> -->
+                        <h2>Basket Contents</h2>
+                        <table class="checkoutList">
+
+                        </table>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

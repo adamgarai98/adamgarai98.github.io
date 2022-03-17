@@ -1,0 +1,443 @@
+/*Common CSS to be shown on all versions (mobile/desktop)*/
+
+
+/* Split the screen in half */
+
+.productBasketDiv {
+    width: 8em;
+}
+
+button {
+    background-color: var(--colour-1);
+    color: var(--colour-1);
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.shop-product-desc {
+    display: none;
+}
+
+.shop-product-units {
+    white-space: nowrap;
+}
+
+.shop-product-title {
+    padding-bottom: 0.2em;
+    padding-top: 0.8em;
+    font-weight: bolder;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.shop-product {
+    font-size: 200%;
+}
+
+.searchbuttons span {
+    color: white;
+    width: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.25em;
+    padding: 0 1em;
+}
+
+.search-bar.active {
+    display: flex;
+    font-size: 2em;
+    justify-content: flex-end;
+    margin-top: 6em;
+    padding-right: 1em;
+}
+
+
+/*
+
+.searchbox{
+    margin-right: 1em;
+    border-radius: 2em;
+    box-shadow: 5px 5px #808080;
+    border:0;
+    border-bottom:1px solid #555;  
+    width:0;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: inherit;
+    font-weight: bold;
+    background-color:rgba(255,255,255,0.9);
+    color: black;
+    width: 20em;
+}
+
+
+.search-bar{
+    display: none;
+    position: fixed;
+    right: 1.5%;
+    padding-bottom: 18px;
+    padding-top: 4px;
+}
+
+.searchbuttons a span{
+    color: black;
+    cursor: pointer;
+}*/
+
+.menu {
+    height: 100%;
+    border-right: solid 5px hsl(var(--colour-1-h), var(--colour-1-s), var(--colour-1-l));
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: var(--colour-3);
+    height: 2em;
+    width: 100%;
+}
+
+.about {
+    clear: both;
+    height: 20px;
+    padding: 2em;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navbar-links {
+    display: flex;
+    width: 100%;
+}
+
+.spacer {
+    flex-grow: 1;
+    /* width: 10%; */
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a,
+.subnavbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    min-width: 4em;
+    text-align: center;
+    padding: 0 1rem 0.5rem 1rem;
+    display: block;
+}
+
+.navbar-links ul li span {
+    padding-bottom: 2px;
+}
+
+.navbar-links ul li ul {
+    display: none;
+}
+
+.navbar-links ul li:hover ul {
+    display: flex;
+}
+
+.navbar-links li ul {
+    position: absolute;
+    display: flex;
+}
+
+.toggle-wrapper {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    /* background: black; */
+    padding: 1em;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.toggle-wrapper {
+    display: none;
+}
+
+#searchDesc {
+    margin-top: 1em;
+    font-size: 2em;
+    margin-left: 4rem;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: var(--hero-height);
+}
+
+* {
+    margin: 0;
+    /* color: var(--colour-6); */
+}
+
+#basket {
+    position: absolute;
+    display: none;
+    width: 20em;
+    height: var(--hero-height);
+    background-color: var(--colour-1);
+    opacity: 1;
+}
+
+.hero {
+    /* background-color: var(--colour-2); */
+    position: fixed;
+    width: 100%;
+    background-image: url('/images/other/pexels-connor-danylenko-3113649.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: var(--hero-height);
+}
+
+.hero div.title {
+    font-weight: 900;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: calc(100% - 6rem);
+    display: inline-block;
+    color: white;
+    text-shadow: 2px -1px 8px var(--colour-3);
+}
+
+.hero fieldset {
+    border: 3px;
+    position: absolute;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-shadow: 2px -1px 8px var(--colour-3);
+}
+
+.categoriesForm p {
+    text-align: center;
+    color: var(--colour-3);
+    font-size: 2em;
+}
+
+.categoriesForm h2 {
+    text-align: left;
+    color: var(--colour-3);
+    font-size: 2em;
+}
+
+.imgspacer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#cookieMessage {
+    position: fixed;
+    /* right: 0px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    left: 20%;
+    bottom: 10px;
+    background-color: var(--colour-5);
+    text-align: center;
+    padding: 01em;
+    border-radius: 1em;
+    color: var(--colour-3);
+    font-size: medium;
+    /* padding: 20px; */
+    /* display: none; */
+}
+
+#acceptCookies {
+    font-size: xxx-large;
+    font-weight: bold;
+    border-radius: 00.25em;
+    padding: 0.1em;
+    color: white;
+    background-color: var(--colour-3);
+    cursor: pointer;
+    margin-top: 300px;
+}
+
+p {
+    font-size: 150%;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--colour-4);
+}
+
+a:visited {
+    color: var(--colour-5);
+}
+
+
+/* 
+form.customerDetails {
+border: 1px solid #c1c1c1;
+width: 100%;
+}
+
+form.customerDetails label {
+display: block;
+}
+
+form.customerDetails input {
+width: 80%;
+}
+
+form.customerDetails button{
+    /* margin-top:500px; 
+    display: block;
+}
+
+.checkoutList{
+    width:50%;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.checkoutList{
+    text-align: center;
+}
+
+.checkoutList tr td:nth-child(4){
+    font-weight: bold;
+}
+.checkoutList tr:last-child{
+    font-weight: bold;
+}
+
+.checkoutList tr:last-child td:first-child{
+    text-align: right;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
